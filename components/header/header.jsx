@@ -18,21 +18,19 @@ export default function Header() {
 } 
 
 function linkItems(router) {
-  const links = ['home', 'blog', 'music'];
+  const links = {
+    'home': '/',
+    'blog': '/blog',
+    'music': 'https://skipcloud.bandcamp.com'
+  }
 
-  return links.map(value => {
-    let path = `/${value}`;
-    if (value === 'home') {
-      path = '/'
-    }
-
-    console.log(`/${path}`)
+  return Object.keys(links).map(name => {
     return (
       <li 
-        key={value} 
-        className={router.pathname === path ? styles.activePage : ''}>
-        <Link href={path}>
-          {value} 
+        key={name} 
+        className={router.pathname === links[name] ? styles.activePage : ''}>
+        <Link href={links[name]}>
+          {name} 
         </Link>
       </li>
     )    
