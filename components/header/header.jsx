@@ -1,6 +1,7 @@
 import React from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
+import { nanoid } from 'nanoid'
 
 import styles from './header.module.css'
 
@@ -27,7 +28,7 @@ function linkItems(router) {
   return Object.keys(links).map(name => {
     return (
       <li 
-        key={name} 
+        key={nanoid()} 
         className={router.pathname === links[name] ? styles.activePage : ''}>
         <Link href={links[name]}>
           {name} 
