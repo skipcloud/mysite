@@ -11,9 +11,9 @@ export default function Home() {
         />
         <section>
           <h2>about</h2>
-          hi there, i'm skip { String.fromCodePoint(0x1F44B)  }
+          hi there, im skip { String.fromCodePoint(0x1F44B)  }
           <br />
-          i'm a self taught software engineer
+          im a self taught software engineer
           <br />
           currently living in London
           <br />

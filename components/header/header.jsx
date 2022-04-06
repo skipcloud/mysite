@@ -27,11 +27,9 @@ function linkItems(router) {
 
   return Object.keys(links).map(name => {
     return (
-      <li 
-        key={nanoid()} 
-        className={router.pathname === links[name] ? styles.activePage : ''}>
+      <li key={nanoid()} >
         <Link href={links[name]}>
-          {name} 
+          <a className={router.pathname === links[name] ? styles.activePage : ''}>{name}</a> 
         </Link>
       </li>
     )    
