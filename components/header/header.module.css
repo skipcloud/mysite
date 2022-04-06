@@ -12,4 +12,6 @@
 
 .activePage {
   text-decoration: underline;
+  color: var(--third-color);
 }
+

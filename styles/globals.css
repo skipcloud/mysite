@@ -7,12 +7,20 @@ body {
   font-size: 10px;
 }
 
+:root {
+--first-color: #ffa5bf;
+--second-color: #ffc19e;
+--third-color: #006097;
+--fourth-color: #009b97;
+--fifth-color: #68d5aa;
+}
+
 ul {
   padding: 0;
 }
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: inherit; 
 }
 
