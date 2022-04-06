@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import Head from 'next/head'
-import Header from '../../components/header/header'
+import Header from '../../components/header'
 import styles from './layout.module.css'
 
 
