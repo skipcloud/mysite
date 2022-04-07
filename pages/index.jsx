@@ -1,17 +1,20 @@
+import Image from "next/image";
 import Layout from '../components/layout'
 import styles from './index.module.css'
+import me from '../public/skip-elevator.jpg'
 
 export default function Home() {
   return (
     <Layout>
       <main className={styles.main}>
-        <img 
-          src="https://www.vets4pets.com/siteassets/species/cat/close-up-of-cat.jpg?w=585&scale=down" 
+        <Image 
+          styles={styles.img}
+          src={me}
           alt="A picture of Skip"
         />
         <section>
           <h2>about</h2>
-          hi there, im skip { String.fromCodePoint(0x1F44B)  }
+          hi there, im skip {'\u{1F44B}'}
           <br />
           im a self taught software engineer
           <br />
