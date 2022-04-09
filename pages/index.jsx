@@ -5,7 +5,7 @@ import me from '../public/skip-elevator.jpg'
 
 export default function Home() {
   return (
-    <Layout>
+    <Layout page_title="Skip Gibson">
       <main className={styles.main}>
         <Image 
           styles={styles.img}

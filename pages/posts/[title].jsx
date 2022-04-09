@@ -7,16 +7,21 @@ const markdownPath = path.join(process.cwd(), 'posts_markdown')
 
 export default function Post({ post }) {
   return (
-    <Layout>{ post }</Layout>
+    <Layout page_title={post.data.title}>
+      { post.content }
+    </Layout>
   )
 }
 
 export async function getStaticProps({ params }) {
   const file = fs.readFileSync(`${markdownPath}/${params.title}.md`, 'utf8')
-  const { content } = matter(file)
+  const parsedFile = matter(file)
   return {
     props: {
-      post: content
+      post: {
+        content: parsedFile.content,
+        data: parsedFile.data
+      }
     }
   }
 }

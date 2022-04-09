@@ -8,7 +8,7 @@ const postsPath = path.join(process.cwd(), 'posts_markdown')
 
 export default function Blog({ postData }) {
   return (
-    <Layout>
+    <Layout page_title="Blog">
       { posts(postData) }
     </Layout>
   )
