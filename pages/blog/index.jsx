@@ -8,7 +8,10 @@ const postsPath = path.join(process.cwd(), 'posts_markdown')
 
 export default function Blog({ postData }) {
   return (
-    <Layout page_title="Blog">
+    <Layout metadata={{
+        title: "Blog",
+        description: "The index page for Skip Gibson's blog"
+      }}>
       { posts(postData) }
     </Layout>
   )

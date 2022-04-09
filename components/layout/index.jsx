@@ -5,12 +5,15 @@ import styles from './layout.module.css'
 
 
 export default function Layout(props) {
+  const { metadata } = props
   return (
     <div className={styles.container}>
       <Head>
-        <title>{props.page_title}</title>
-        <meta name="description" content="Personal website of Skip Gibson, self taught software engineer" />
+        <title>{metadata.title}</title>
         <link rel="icon" href="/favicon.png" />
+        <meta name="author" content="Skip Gibson" />
+        <meta name="description" content={metadata.description} />
+        <meta charset="utf-8" />
       </Head>
 
       <Header />

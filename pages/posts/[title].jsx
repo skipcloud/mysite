@@ -7,7 +7,10 @@ const markdownPath = path.join(process.cwd(), 'posts_markdown')
 
 export default function Post({ post }) {
   return (
-    <Layout page_title={post.data.title}>
+    <Layout metadata={{
+        title: post.data.title,
+        description: `A blog post titled "${post.data.title}"`
+      }}>
       { post.content }
     </Layout>
   )

@@ -5,7 +5,10 @@ import me from '../public/skip-elevator.jpg'
 
 export default function Home() {
   return (
-    <Layout page_title="Skip Gibson">
+    <Layout metadata={{
+        title: "Skip Gibson",
+        description: "The homepage for Skip Gibson's personal website"
+      }}>
       <main className={styles.main}>
         <Image 
           styles={styles.img}
