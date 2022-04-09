@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ruby Modules
-date: 2020-09-26 08:36:31+01:00
+date: "2020-09-26"
 categories: [blog]
 tags: [ruby, modules, mixin]
 ---

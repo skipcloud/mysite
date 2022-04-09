@@ -1,7 +1,7 @@
 ---
 layout: post
 title: git reset
-date: 2020-10-10 09:17:29+01:00
+date: "2020-10-10"
 categories: [blog]
 tags: [git, reset, index, staging]
 ---

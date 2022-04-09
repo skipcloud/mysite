@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How Containers Work
-date: 2020-07-26 09:03:11+01:00
+date: "2020-07-26"
 categories: [blog]
 tags: [os, processes, containers]
 ---

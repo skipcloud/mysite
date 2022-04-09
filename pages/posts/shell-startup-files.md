@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Shell Startup Files
-date: 2020-05-10 07:07:54+01:00
+date: "2020-05-10"
 categories: [blog]
 tags: [bash, zsh, shell]
 ---

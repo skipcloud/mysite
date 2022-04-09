@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How Git Works
-date: 2020-07-19 08:30:15+01:00
+date: "2020-07-19"
 categories: [blog]
 tags: [git]
 ---

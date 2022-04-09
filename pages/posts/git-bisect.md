@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "git bisect"
-date: 2020-02-28 09:52:49+00:00
+date: "2020-02-28"
 category: tips
 tags: [git]
 ---

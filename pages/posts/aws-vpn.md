@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Creating a personal VPN using AWS
-date: 2020-03-29 09:21:15+01:00
+date: "2020-03-29"
 category: blog
 tags: [AWS, VPN]
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Ruby: Enumerable & Enumerator'
-date: 2020-08-16 12:03:06+01:00
+date: "2020-08-16"
 categories: [blog]
 tags: [ruby, enumerator, enumerable]
 ---

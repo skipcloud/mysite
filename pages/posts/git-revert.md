@@ -1,7 +1,7 @@
 ---
 layout: post
 title: git revert
-date: 2020-10-03 08:44:47+01:00
+date: "2020-10-03"
 categories: [blog]
 tags: [git, revert, mainline]
 ---

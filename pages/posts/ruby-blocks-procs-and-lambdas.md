@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Ruby: Blocks, Procs, and Lambdas"
-date: 2020-06-07 11:59:16+01:00
+date: "2020-06-07"
 categories: [blog]
 tags: [ruby, blocks, procs, lambdas]
 ---

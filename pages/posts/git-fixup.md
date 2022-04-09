@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "git fixup"
-date: 2020-02-09 12:03:24+00:00
+date: "2020-02-09"
 category: tips
 tags: [git]
 ---

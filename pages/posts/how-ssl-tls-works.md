@@ -1,7 +1,7 @@
 ---
 layout: post
 title: how SSL/TLS works
-date: 2021-08-22 10:29:14+01:00
+date: "2021-08-22"
 categories: [internet, protocols]
 tags: [ssl, tls, internet, protocol, cryptography]
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ruby Object Model
-date: 2020-05-17 09:24:49+01:00
+date: "2020-05-17"
 categories: [blog]
 tags: [ruby]
 ---

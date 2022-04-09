@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "First post"
-date:  2020-02-08 09:12:58 +00:00
+date:  "2020-02-08"
 category: blog
 tags: [deliveroo, git]
 ---

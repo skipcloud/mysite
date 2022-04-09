@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Where Did Vim Come From?
-date: 2020-07-12 11:20:34+01:00
+date: "2020-07-12"
 categories: [blog]
 tags: [vim, ed, em, ex]
 ---

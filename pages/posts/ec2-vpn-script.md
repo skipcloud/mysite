@@ -1,7 +1,7 @@
 ---
 layout: post
 title: EC2 VPN script
-date: 2020-04-26 11:07:25+01:00
+date: "2020-04-26"
 category: blog
 tags: [AWS, VPN]
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Control Characters
-date: 2020-05-31 09:57:02+01:00
+date: "2020-05-31"
 categories: [blog]
 tags: ['control characters', encoding, 'character encoding', 'ascii']
 ---

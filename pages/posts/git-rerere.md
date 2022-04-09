@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "re: git rerere"
-date: 2020-02-16 07:31:07+00:00
+date: "2020-02-16"
 category: tips
 tags: [git]
 ---

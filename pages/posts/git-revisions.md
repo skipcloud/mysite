@@ -1,7 +1,7 @@
 ---
 layout: post
 title: git revisions
-date: 2020-11-08 06:57:45+00:00
+date: "2020-11-08"
 categories: [blog]
 tags: [git, revisions, HEAD, range]
 ---

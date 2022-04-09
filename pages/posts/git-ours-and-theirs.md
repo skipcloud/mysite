@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'git: ours and theirs'
-date: 2020-10-24 07:28:21+01:00
+date: "2020-10-24"
 categories: [blog]
 tags: [git, ours, theirs, merge, rebase]
 ---

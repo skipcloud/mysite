@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Character Encodings
-date: 2020-09-13 08:15:50+01:00
+date: "2020-09-13"
 categories: [blog]
 tags: ['character encodings', ASCII, Unicode]
 ---
