@@ -13,7 +13,7 @@ export default function Layout(props) {
         <link rel="icon" href="/favicon.png" />
         <meta name="author" content="Skip Gibson" />
         <meta name="description" content={metadata.description} />
-        <meta charset="utf-8" />
+        <meta charSet="utf-8" />
       </Head>
 
       <Header />

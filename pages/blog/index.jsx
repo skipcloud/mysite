@@ -17,20 +17,6 @@ export default function Blog({ postData }) {
   )
 }
 
-function posts(posts) {
-  const links = posts.map(id => {
-    return (
-      <li key={id}>
-        <Link href={`/posts/${id}`} >{ id }</Link>
-      </li>
-    )
-  })
-
-  return (
-    <ul>{ links }</ul>
-  )
-}
-
 export async function getStaticProps() {
   const filePaths = fs.readdirSync(postsPath)
 
@@ -42,3 +28,18 @@ export async function getStaticProps() {
     }
   }
 }
+
+function posts(posts) {
+  const links = posts.map(id => {
+    return (
+      <li key={id}>
+        <Link href={`/blog/${id}`} >{ id }</Link>
+      </li>
+    )
+  })
+
+  return (
+    <ul>{ links }</ul>
+  )
+}
+
