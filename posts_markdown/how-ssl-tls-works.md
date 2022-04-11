@@ -53,13 +53,13 @@ HTTP request to fetch this exact post from the server running on my machine that
 I am using as I write this post, and using Wireshark I've singled out the
 request.
 
-<img src="/assets/img/2021-08-22/wireshark1.png" class="blog-image" alt="A
+<img src="/public/img/2021-08-22/wireshark1.png" class="blog-image" alt="A
 screenshot of Wireshark showing an HTTP request" />
 
 Each line there is a TCP message so if I click on one of them I should see the
 data the packet is carrying in the bottom section.
 
-<img src="/assets/img/2021-08-22/wireshark2.png" class="blog-image" alt="A
+<img src="/public/img/2021-08-22/wireshark2.png" class="blog-image" alt="A
 screenshot of Wireshark showing an HTTP request and the information in plain
 text" />
 
@@ -106,7 +106,7 @@ padlock icon in the URL bar so you know you're communicating with the site using
 TLS. There's a little more to this icon regarding TLS Certificates but I'll
 circle back to this topic later.
 
-<img src="/assets/img/2021-08-22/https1.png" class="blog-image" alt="A
+<img src="/public/img/2021-08-22/https1.png" class="blog-image" alt="A
 screenshot showing the padlock icon in a browser" />
 
 This appears when you visit a site using the
@@ -118,7 +118,7 @@ A little demonstration to show you the encrypted messages would be good. I'll
 visit a website using `https://` and capture the traffic using Wireshark. Here
 is the captured TCP stream:
 
-<img src="/assets/img/2021-08-22/wireshark3.png" class="blog-image" alt="A
+<img src="/public/img/2021-08-22/wireshark3.png" class="blog-image" alt="A
 screenshot of an HTTPS request" />
 
 There are a couple of differences between this `https` request and the earlier
@@ -131,13 +131,13 @@ destination port number, in other words the port my computer is sending data to,
 is `443` when using `https` instead of port `80` which is used for `http`.
 Servers expect `https` traffic on port `443`.
 
-<img src="/assets/img/2021-08-22/wireshark4.png" class="blog-image" alt="A
+<img src="/public/img/2021-08-22/wireshark4.png" class="blog-image" alt="A
 screenshot of Wireshark showing the packets" />
 
 Now if we find and highlight the data being transmitted we can see it's
 encrypted and I'm unable to make sense of it. Perfect.
 
-<img src="/assets/img/2021-08-22/wireshark5.png" class="blog-image" alt="A
+<img src="/public/img/2021-08-22/wireshark5.png" class="blog-image" alt="A
 screenshot from Wireshark showing encrypted application data" />
 
 ## other protocols
@@ -165,13 +165,13 @@ To start off a client and a server go through a 3 way TCP handshake in order to
 set up a connection between them, the ins and outs of a TCP handshake aren't
 important in this post.
 
-<img src="/assets/img/2021-08-22/handshake1.png" class="blog-image" alt="A
+<img src="/public/img/2021-08-22/handshake1.png" class="blog-image" alt="A
 diagram showing a client and a server doing a TCP Handshake" />
 
 Three messages later and we have a connection the client then initiates the TLS
 handshake by sending a `Client Hello` message.
 
-<img src="/assets/img/2021-08-22/handshake2.png" class="blog-image" alt="A
+<img src="/public/img/2021-08-22/handshake2.png" class="blog-image" alt="A
 diagram showing a client and server starting a TLS handshake" />
 
 The message includes the maximum version of TLS it supports, a list of cipher suites,
@@ -202,7 +202,7 @@ It also creates a random string of bytes known as the "server random" and the
 server wraps this information up with a big bow along with some other values and
 lovingly sends it over to the client, this is the `Server Hello` message.
 
-<img src="/assets/img/2021-08-22/handshake3.png" class="blog-image" alt="A
+<img src="/public/img/2021-08-22/handshake3.png" class="blog-image" alt="A
 diagram showing a server sending a Server Hello message to the client" />
 
 As you can see a couple of other messages are sent by the server to the client
@@ -220,15 +220,15 @@ Certificate is.
 Remember that padlock your browser shows you near the URL bar? If you click on
 it you should see an option to view the TLS Certificate for the website.
 
-<img src="/assets/img/2021-08-22/padlock.png" class="blog-image" alt="A
+<img src="/public/img/2021-08-22/padlock.png" class="blog-image" alt="A
 screenshot showing the menu dropdown of the padlock beside a URL bar" />
 
 And clicking through to the certificate we see some basic information about this
 certificate.
 
-<img src="/assets/img/2021-08-22/tls-cert.png" class="blog-image" alt="A
+<img src="/public/img/2021-08-22/tls-cert.png" class="blog-image" alt="A
 screenshot of a TLS certificate when viewed on a web browser" /> <br />
-<img src="/assets/img/2021-08-22/tls-cert-signature.png" class="blog-image" alt="A
+<img src="/public/img/2021-08-22/tls-cert-signature.png" class="blog-image" alt="A
 screenshot of the details page of a TLS certificate" />
 
 There is a lot more I could write about the contents of these certificates but
@@ -323,7 +323,7 @@ the certificate when it receives it, here is how that happens:
     so it can use the same algorithm that the CA used when creating the
     certificate.
 
-    <img src="/assets/img/2021-08-22/tls-cert-algo.png" class="blog-image" alt="A
+    <img src="/public/img/2021-08-22/tls-cert-algo.png" class="blog-image" alt="A
     screenshot of the Certificate Signature Algorithm field of Twitter's TLS
     Certificate" />
 
@@ -351,7 +351,7 @@ suite and a `Certificate` message with the server's TLS Certificate. Let's
 assume the certificate is valid and the client is happy to proceed. Here is
 where we are in the process:
 
-<img src="/assets/img/2021-08-22/handshake3.png" class="blog-image" alt="A
+<img src="/public/img/2021-08-22/handshake3.png" class="blog-image" alt="A
 diagram showing a server sending a Server Hello message to the client" />
 
 There is one message there that we haven't discussed and that's the `Server Key
@@ -471,7 +471,7 @@ Now that the client has it's own pre-secret it sends this to the server in a
 `Client Key Exchange` message so the server can do the next step in calculating
 the master secret which the client is also about to do.
 
-<img src="/assets/img/2021-08-22/handshake4.png" class="blog-image" alt="A
+<img src="/public/img/2021-08-22/handshake4.png" class="blog-image" alt="A
 diagram showing a client sending a Client Key Exchange message to the server" />
 
 To recap, here are all the values in play out in the open:
@@ -581,7 +581,7 @@ The maths has been done, values have been calculated, what happens next is the
 client sends the server another message which is known as the `Client Change
 Cipher Spec` message.
 
-<img src="/assets/img/2021-08-22/handshake5.png" class="blog-image" alt="A
+<img src="/public/img/2021-08-22/handshake5.png" class="blog-image" alt="A
 diagram showing a client sending a Change Cipher Spec message to the server" />
 
 Essentially this message says the client has all of the information it needs to
@@ -612,7 +612,7 @@ to authenticate a message and ensure that nothing has changed in flight.
 The client sends its final message of the handshake which is called `Client
 Finished`.
 
-<img src="/assets/img/2021-08-22/handshake6.png" class="blog-image" alt="A
+<img src="/public/img/2021-08-22/handshake6.png" class="blog-image" alt="A
 diagram showing a client sending a Client Finished message to the server" />
 
 In this message the client has hashed all of the messages sent so far and
@@ -632,7 +632,7 @@ with that version.
 All that is left to do is for the server to send a `Change Cipher Spec` and a
 `Server Finished` message.
 
-<img src="/assets/img/2021-08-22/handshake7.png" class="blog-image" alt="A
+<img src="/public/img/2021-08-22/handshake7.png" class="blog-image" alt="A
 diagram showing a server sending a Server Finished message to the client" />
 
 These messages are similar to the  client ones only containing information based
@@ -681,7 +681,7 @@ I won't go into much detail with this because the general gist of what happens
 is the same it just happens in a different order, here is the handshake in its
 entirety.
 
-<img src="/assets/img/2021-08-22/handshake8.png" class="blog-image" alt="A
+<img src="/public/img/2021-08-22/handshake8.png" class="blog-image" alt="A
 diagram showing a 1.3 handshake in full" />
 
 To start the client sends its hello message that contains its supported cipher

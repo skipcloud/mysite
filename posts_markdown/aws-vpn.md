@@ -40,7 +40,7 @@ have nothing to lose trying this out.
 Sign yourself into AWS and navigate to the EC2 service console, we need to
 launch ourselves a new instance. Click the big blue "Launch Instance" button.
 
-<img src="/assets/img/ec2-launch-instance.png" class="blog-image" />
+<img src="/public/img/ec2-launch-instance.png" class="blog-image" />
 
 This will land you in the AMI (Amazon Machine Image) selection page, an AMI is
 just a ready made image you will use as the basis for your instance, go ahead
@@ -48,7 +48,7 @@ and select the latest Ubuntu version, the default architecture will do just
 fine. The AWS Overlords have deemed this image worthy enough of the free tier,
 so that's nice.
 
-<img src="/assets/img/ec2-ami.png" class="blog-image" />
+<img src="/public/img/ec2-ami.png" class="blog-image" />
 
 ## choosing an instance type
 
@@ -57,7 +57,7 @@ run on, let's stick to the t2.micro because 1. It's free tier, and 2. We are
 running a VPN not running some public app that's serving 700 requests per
 second. A small instance will do the job.
 
-<img src="/assets/img/ec2-instance-size.png" class="blog-image" />
+<img src="/public/img/ec2-instance-size.png" class="blog-image" />
 
 Click "Review and Launch" to proceed (see, isn't this a piece of piss)
 
@@ -67,7 +67,7 @@ If you've been following along you should now be at a review page for your
 instance, but we aren't done we need to open up some ports. Click on the "Edit
 security groups" link.
 
-<img src="/assets/img/ec2-review.png" class="blog-image" />
+<img src="/public/img/ec2-review.png" class="blog-image" />
 
 AWS runs on the premise that everything is locked down unless you specifically
 give permissions for something to be done. For example in the security group
@@ -81,7 +81,7 @@ generally preferred but let's allow the port to accept both protocols.
 
 Your security group should look like this.
 
-<img src="/assets/img/ec2-security-groups.png" class="blog-image" />
+<img src="/public/img/ec2-security-groups.png" class="blog-image" />
 
 Click "Review and Launch" to bring you back to the view screen.
 
@@ -90,7 +90,7 @@ Click "Review and Launch" to bring you back to the view screen.
 When you are ready you can click "Launch" and you will be presented with a modal
 asking you if you want to select an existing key pair or generate a new one.
 
-<img src="/assets/img/ec2-keys.png" class="blog-image" />
+<img src="/public/img/ec2-keys.png" class="blog-image" />
 
 Let's create a new pair, give them a name that you will understand later like
 "VPN keys". These will be used with SSH later to authenticate you and grant you
@@ -107,7 +107,7 @@ your instance running, if you select it you will see a whole bunch of
 information about it in a panel just below. You can drag the panel up to make it
 bigger.
 
-<img src="/assets/img/ec2-up-and-running.png" class="blog-image" />
+<img src="/public/img/ec2-up-and-running.png" class="blog-image" />
 
 I have blurred out all (I hope) of my information and highlighted where the
 public IP address is. This is the IP address you will use to SSH into your
@@ -122,7 +122,7 @@ We need to take the keys you generated and downloaded earlier and store the
 * Change the permissions for security.
 * Use `ssh-add` to add the key to your key chain.
 
-<img src="/assets/img/ec2-ssh-keys.png" class="blog-image" />
+<img src="/public/img/ec2-ssh-keys.png" class="blog-image" />
 
 With that out of the way you should be able to run `ssh ubuntu@<your-public-ip>`
 and connect to your running EC2 instance.
@@ -143,16 +143,16 @@ the script:
 
 `wget https://git.io/vpn -O openvpn-install.sh`
 
-<img src="/assets/img/ec2-download-openvpn-script.png" class="blog-image" />
+<img src="/public/img/ec2-download-openvpn-script.png" class="blog-image" />
 
 Make the script executable and run it.
 
-<img src="/assets/img/ec2-executable-script.png" class="blog-image" />
+<img src="/public/img/ec2-executable-script.png" class="blog-image" />
 
 The script will ask for some configuration but you can just hit enter to let it
 use the defaults.
 
-<img src="/assets/img/ec2-openvpn-script.png" class="blog-image" />
+<img src="/public/img/ec2-openvpn-script.png" class="blog-image" />
 
 When it has finished it will tell you where it has stored the generated `.ovpn`
 file, for me it has been stored here `/home/ubuntu/client.ovpn`. You can
@@ -163,7 +163,7 @@ The last step here is getting your `ovpn` file off your instance and onto your
 machine, use `scp` on your local terminal and the public IP you used to SSH into
 your machine to securely transfer the file.
 
-<img src="/assets/img/ec2-ovpn-transfer.png" class="blog-image" />
+<img src="/public/img/ec2-ovpn-transfer.png" class="blog-image" />
 
 ## running openvpn on linux
 
@@ -176,13 +176,13 @@ First we need to install OpenVPN: run `sudo apt-get install openvpn`.
 After that has downloaded we run `sudo openvpn <path-to-ovpn-file>` to connect.
 You should see a lot of output from `openvpn` as it connects.
 
-<img src="/assets/img/ec2-ovpn-connect.png" class="blog-image" />
+<img src="/public/img/ec2-ovpn-connect.png" class="blog-image" />
 
 If you go to your favourite search engine and check your IP address it should say
 you are in whatever AWS Availability Zone you set your EC2 instance up in, for me
 it was Dublin.
 
-<img src="/assets/img/ec2-connected-to-vpn.png" class="blog-image" />
+<img src="/public/img/ec2-connected-to-vpn.png" class="blog-image" />
 
 ## there's one problem
 

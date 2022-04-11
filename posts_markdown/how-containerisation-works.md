@@ -42,7 +42,7 @@ machines with each virtual machine running a different application. Just one not
 diagrams are not accurate representations of how much memory each block takes up
 on a machine, using blocks just aids in getting my point across.
 
-<img src="/assets/img/2020-07-26/vm.png" class="blog-image" alt="a
+<img src="/public/img/2020-07-26/vm.png" class="blog-image" alt="a
 representation of how a VM works" />
 
 At the bottom of our stack is the infrastructure, in our case it's the server we
@@ -69,7 +69,7 @@ fact you need to wait for the operating systems to start.
 Here is the same server that is running applications as containers rather than
 virtual machines.
 
-<img src="/assets/img/2020-07-26/containers.png" class="blog-image" alt="a
+<img src="/public/img/2020-07-26/containers.png" class="blog-image" alt="a
 representation of a server with containers on it" />
 
 Just as before we've got the host operating system but running on top of that
@@ -636,7 +636,7 @@ To do that we need the host to set up a link for us. Here is a diagram to
 right now. You can see the host and the "container", which is just our contained
 process.
 
-<img src="/assets/img/2020-07-26/network1.png" class="blog-image" alt="the host
+<img src="/public/img/2020-07-26/network1.png" class="blog-image" alt="the host
 with a container in it which is not connected to any network" />
 
 First things first we need to create something called a Virtual Ethernet
@@ -699,7 +699,7 @@ root@wizard# ip link
 
 Updating the diagram from earlier it now looks something like this.
 
-<img src="/assets/img/2020-07-26/network2.png" class="blog-image" alt="the host
+<img src="/public/img/2020-07-26/network2.png" class="blog-image" alt="the host
 with a container in it, both connected by a veth pair" />
 
 Now that we have one end of the `veth` interfaces in both of our namespaces,
@@ -779,7 +779,7 @@ already out of my depth, but here is how it might look. Note that the bridge can
 also be used to connect other containers together, so they can communicate not
 only with the internet but also with each other.
 
-<img src="/assets/img/2020-07-26/network3.png" class="blog-image" alt="the host
+<img src="/public/img/2020-07-26/network3.png" class="blog-image" alt="the host
 and container connected via a bridge which is connected to the wifi network
 interface" />
 

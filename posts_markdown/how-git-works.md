@@ -512,7 +512,7 @@ Second commit
 A diagram to show the relationships between the objects we currently have in our
 objects directory would be helpful here I reckon.
 
-<img src="/assets/img/2020-07-19/two-commits.png" class="blog-image" alt="The
+<img src="/public/img/2020-07-19/two-commits.png" class="blog-image" alt="The
 state of our object store with two commit objects" />
 
 What we have done here with our commits is create a [directed acyclic graph
@@ -628,7 +628,7 @@ all that it contains is a commit hash.
 
 Let's add this new `master` ref and the `HEAD` file to our diagram from earlier.
 
-<img src="/assets/img/2020-07-19/head-branch.png" class="blog-image" alt="The
+<img src="/public/img/2020-07-19/head-branch.png" class="blog-image" alt="The
 state of our object store accessible from the master branch and HEAD" />
 
 ## branching
@@ -666,7 +666,7 @@ ref: refs/heads/dev
 
 I'll update the diagram from before to include this new branch.
 
-<img src="/assets/img/2020-07-19/dev-branch.png" class="blog-image" alt="The
+<img src="/public/img/2020-07-19/dev-branch.png" class="blog-image" alt="The
 state of our object store accessible from the dev branch and HEAD" />
 
 Let's then do some work on this new branch, let's edit `new_file.txt` and seeing
@@ -711,7 +711,7 @@ And here is the current state of our project, note the two versions of
 `new_file.txt`. The new one is only referenced by the latest commit whilst the
 old one is referenced by older commits.
 
-<img src="/assets/img/2020-07-19/new-dev-commit.png" class="blog-image" alt="The
+<img src="/public/img/2020-07-19/new-dev-commit.png" class="blog-image" alt="The
 state of our object store accessible from the dev branch and HEAD" />
 
 The commit `c0baa2` is the latest commit and the branch `dev` is pointing to it,
@@ -757,7 +757,7 @@ might not find it again.
 Here is our diagram now showing `HEAD` pointing to the initial commit whilst the
 `master` and `dev` branches stay pointing to their own commit objects.
 
-<img src="/assets/img/2020-07-19/detached-head.png" class="blog-image" alt="a
+<img src="/public/img/2020-07-19/detached-head.png" class="blog-image" alt="a
 detached head state" />
 
 ### git reflog

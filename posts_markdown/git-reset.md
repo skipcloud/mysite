@@ -26,7 +26,7 @@ working tree, in the index, or committed. The arrows show the various ways you
 can move a file between these stages using git commands. Spoiler: you can use
 `git reset` for some of these movements.
 
-<img src="/assets/img/2020-10-10/overview.png" class="blog-image" alt="A
+<img src="/public/img/2020-10-10/overview.png" class="blog-image" alt="A
 simplified overview the file life cycle in git" />
 
 I'll go over each of these stages but if you want a much deeper insight
@@ -173,7 +173,7 @@ our working tree is the same as the version that's in our index. If we consider
 `file` to be in state `A` then our high level overview diagram will look like
 this.
 
-<img src="/assets/img/2020-10-10/state-a.png" class="blog-image" alt="A
+<img src="/public/img/2020-10-10/state-a.png" class="blog-image" alt="A
 simplified overview the file life cycle in git - state A" />
 
 As I mentioned before `git status` can show us the difference between these
@@ -239,7 +239,7 @@ What I've been calling the `committed` stage in reality is the commit
 object that's currently being pointed to by `HEAD`. So our overview diagram now
 looks like this:
 
-<img src="/assets/img/2020-10-10/state-a-all.png" class="blog-image" alt="A
+<img src="/public/img/2020-10-10/state-a-all.png" class="blog-image" alt="A
 simplified overview the file life cycle in git - state A" />
 
 You might think our staging area (the index file) is empty seeing as we've
@@ -286,7 +286,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
 If we consider the state of `file` in our working tree as state `B`
 then this is our new high level view:
 
-<img src="/assets/img/2020-10-10/state-b.png" class="blog-image" alt="A
+<img src="/public/img/2020-10-10/state-b.png" class="blog-image" alt="A
 simplified overview the file life cycle in git - state B" />
 
 `git status` sees there is a difference between the working tree and the index
@@ -317,7 +317,7 @@ Changes to be committed:
 
 Our high level overview now looks like this:
 
-<img src="/assets/img/2020-10-10/state-b-staged.png" class="blog-image" alt="A
+<img src="/public/img/2020-10-10/state-b-staged.png" class="blog-image" alt="A
 simplified overview the file life cycle in git - state B" />
 
 And of course running `git commit` will use whatever is in the index file right
@@ -340,7 +340,7 @@ nothing to commit, working tree clean
 ...and our overview now shows that state `B` is what is seen in all three
 stages.
 
-<img src="/assets/img/2020-10-10/state-b-all.png" class="blog-image" alt="A
+<img src="/public/img/2020-10-10/state-b-all.png" class="blog-image" alt="A
 simplified overview the file life cycle in git - state B" />
 
 Up until now we've been moving through these stages in one direction, from
@@ -382,7 +382,7 @@ pass a `<tree-ish>` object then the command defaults to `HEAD`.
 
 As always an example helps a lot so let's set up the repo to look like this:
 
-<img src="/assets/img/2020-10-10/state-c-staged.png" class="blog-image" alt="A
+<img src="/public/img/2020-10-10/state-c-staged.png" class="blog-image" alt="A
 simplified overview the file life cycle in git - state C" />
 
 To do that I'll just edit our `file` and add it to the index.
@@ -422,7 +422,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 This leaves our overview looking like this:
 
-<img src="/assets/img/2020-10-10/state-c.png" class="blog-image" alt="A
+<img src="/public/img/2020-10-10/state-c.png" class="blog-image" alt="A
 simplified overview the file life cycle in git - state C" />
 
 If we instead pass a reference to `commit A` to the command then it will update
@@ -469,7 +469,7 @@ at.
 
 Our overview now looks like this:
 
-<img src="/assets/img/2020-10-10/state-cab.png" class="blog-image" alt="A
+<img src="/public/img/2020-10-10/state-cab.png" class="blog-image" alt="A
 simplified overview the file life cycle in git - state C" />
 
 In essence `git reset <paths>...` is how you remove a file from the staging
@@ -531,7 +531,7 @@ state C
 
 This has left our overview looking like this again:
 
-<img src="/assets/img/2020-10-10/state-c.png" class="blog-image" alt="A
+<img src="/public/img/2020-10-10/state-c.png" class="blog-image" alt="A
 simplified overview the file life cycle in git - state C" />
 
 That's all I want to say about `--patch` so let's tackle the last way you can
@@ -579,13 +579,13 @@ leaving the index and the working tree completely untouched.
 To demonstrate let's say the repo is at `commit B` and the working tree, the
 index, and `HEAD` all see `file` in state `B`.
 
-<img src="/assets/img/2020-10-10/state-b-all.png" class="blog-image" alt="A
+<img src="/public/img/2020-10-10/state-b-all.png" class="blog-image" alt="A
 simplified overview the file life cycle in git - state B" />
 
 Running `git reset --soft 4534c70` to reset `HEAD` to point at `commit A` should
 result in this view of the world.
 
-<img src="/assets/img/2020-10-10/state-bba.png" class="blog-image" alt="A
+<img src="/public/img/2020-10-10/state-bba.png" class="blog-image" alt="A
 simplified overview the file life cycle in git - state B B A" />
 
 ```
@@ -647,7 +647,7 @@ untouched.
 
 As a reminder here is our view of the world as it stands right now:
 
-<img src="/assets/img/2020-10-10/state-b-all.png" class="blog-image" alt="A
+<img src="/public/img/2020-10-10/state-b-all.png" class="blog-image" alt="A
 simplified overview the file life cycle in git - state B" />
 
 Running `git reset --mixed 4534c70` to point `HEAD` at `commit A` should also
@@ -674,7 +674,7 @@ is showing `file` in state `B`.
 
 This is our view of the world now:
 
-<img src="/assets/img/2020-10-10/state-b.png" class="blog-image" alt="A
+<img src="/public/img/2020-10-10/state-b.png" class="blog-image" alt="A
 simplified overview the file life cycle in git - state B" />
 
 Let's reset using `git reset ORIG_HEAD` and have a look at the next option.
@@ -693,7 +693,7 @@ Running this command will reset all of our stages to reflect `<commit>`.
 
 Currently every stage sees `file` in state `B`
 
-<img src="/assets/img/2020-10-10/state-b-all.png" class="blog-image" alt="A
+<img src="/public/img/2020-10-10/state-b-all.png" class="blog-image" alt="A
 simplified overview the file life cycle in git - state B" />
 
 Let's reset every stage to `commit A` which has `file` in state `A`.
@@ -709,7 +709,7 @@ nothing to commit, working tree clean
 `git status` is reporting no changes because our working tree, our index, and
 `HEAD` are all seeing `file` in state `A`.
 
-<img src="/assets/img/2020-10-10/state-a-all.png" class="blog-image" alt="A
+<img src="/public/img/2020-10-10/state-a-all.png" class="blog-image" alt="A
 simplified overview the file life cycle in git - state A" />
 
 This mode is very handy if you need to completely blow away a bunch of commits

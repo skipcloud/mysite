@@ -59,13 +59,13 @@ First off I moseyed on over to the IAM Users screen on AWS, in order to keep
 things all tidy what I wanted to do was create a new user called VPN that I
 would attach the permissions policy to.
 
-<img src="/assets/img/iam-users.png" class="blog-image" />
+<img src="/public/img/iam-users.png" class="blog-image" />
 
 After clicking on the "Add User" button, give it a name and select the option
 which states this user will be for "programmatic access" AKA this user will be
 accessing things through the AWS CLI.
 
-<img src="/assets/img/new-iam-user.png" class="blog-image" />
+<img src="/public/img/new-iam-user.png" class="blog-image" />
 
 ### adding permissions
 
@@ -78,7 +78,7 @@ I felt that last option would be best, if I create a VPN group then I can
 add/remove permissions as I go as well as have the option to bestow EC2
 permissions on other users in future.
 
-<img src="/assets/img/iam-user-set-permissions.png" class="blog-image" />
+<img src="/public/img/iam-user-set-permissions.png" class="blog-image" />
 
 ### creating a group and a policy
 
@@ -86,13 +86,13 @@ Clicking the "Create group" button will bring up modal which needs a name for
 the new group and a permissions policy to attach to it, AWS gives some example
 policies to use but let's create a new one.
 
-<img src="/assets/img/iam-create-group.png" class="blog-image" />
+<img src="/public/img/iam-create-group.png" class="blog-image" />
 
 The "Create policy" button opens up a new tab with a policy editor, if you're
 insane you can write your own policy JSON by hand, or you could just use the
 visual editor.
 
-<img src="/assets/img/iam-create-policy.png" class="blog-image" />
+<img src="/public/img/iam-create-policy.png" class="blog-image" />
 
 Selecting the service you want (EC2) you can set which actions are allowed on this
 policy, I know I will want to `StopInstances`, `StartInstances`, as well as
@@ -104,20 +104,20 @@ to affect. You could let this policy affect every instance you've got but I
 decided to click "Add ARN" to limit it to the VPN instance. It's better to limit
 the scope of policies anyway.
 
-<img src="/assets/img/iam-add-arn.png" class="blog-image" />
+<img src="/public/img/iam-add-arn.png" class="blog-image" />
 
 Once that's done, click "Add" to add it to the policy then click "Review
 policy". Give the policy a punchy name and a description that makes sense then
 create that bad boy.
 
-<img src="/assets/img/iam-final-create-policy.png" class="blog-image" />
+<img src="/public/img/iam-final-create-policy.png" class="blog-image" />
 
 With the policy now created it's just a matter of going back to the tab with the
 user creation flow that we left to create the group policy and search for the
 new policy. Give the group a name that makes sense and smash the "Create group"
 button.
 
-<img src="/assets/img/iam-finish-create-group.png" class="blog-image" />
+<img src="/public/img/iam-finish-create-group.png" class="blog-image" />
 
 ### getting the secrets
 
@@ -125,14 +125,14 @@ With the new user added to the group with the new permissions, click onto the
 next step where you can add tags to the user if you like, otherwise head on to
 the next screen to review the new user.
 
-<img src="/assets/img/iam-user-finish.png" class="blog-image" />
+<img src="/public/img/iam-user-finish.png" class="blog-image" />
 
 If all looks in order then click to create the user and the final screen you are
 presented with is a success screen (hopefully) and the Access key ID and Secret
 access key for the new user. These two keys are what the AWS CLI needs in order
 to do its thing, so make a note of them.
 
-<img src="/assets/img/iam-user-secrets.png" class="blog-image" />
+<img src="/public/img/iam-user-secrets.png" class="blog-image" />
 
 Now a user exists that has programmatic access to AWS and permission to start,
 stop, and describe the EC2 VPN instance. Perfect.
@@ -200,11 +200,11 @@ need to run this command `ec2-vpn start`, and the script does all the work for
 me. Including filling in the public IP address of the instance in an `ovpn`
 file, which will be used to connect to the VPN.
 
-<img src="/assets/img/vpn-start.png" class="blog-image" />
+<img src="/public/img/vpn-start.png" class="blog-image" />
 
 Stopping it is just as easy.
 
-<img src="/assets/img/vpn-stop.png" class="blog-image" />
+<img src="/public/img/vpn-stop.png" class="blog-image" />
 
 Using the `start` and `stop` command is fine for starting and stopping, but what
 about connecting to the VPN?
@@ -212,9 +212,9 @@ about connecting to the VPN?
 Easy, `ec2-vpn connect` will start the instance (unless already running) and
 connect to it. The rest of the output is from `openvpn`.
 
-<img src="/assets/img/vpn-connect.png" class="blog-image" />
+<img src="/public/img/vpn-connect.png" class="blog-image" />
 
-<img src="/assets/img/vpn-ip-address.png" class="blog-image" />
+<img src="/public/img/vpn-ip-address.png" class="blog-image" />
 
 If we issue some sort of interrupt, using control-c for example, then this will
 be caught in the script using `trap` and you will be disconnected from the VPN
@@ -222,7 +222,7 @@ and your EC2 instance torn down.
 
 I've highlighted `^C` so you can see that's exactly what I've done here.
 
-<img src="/assets/img/vpn-disconnect.png" class="blog-image" />
+<img src="/public/img/vpn-disconnect.png" class="blog-image" />
 
 ## lazy fuck
 

@@ -22,7 +22,7 @@ what happens so you can feel confident making these changes yourself.
 If you're using [github](https://github.com) then you can easily open a pull
 request to revert a merged pull request just by clicking a button.
 
-<img src="/assets/img/2020-10-03/github-revert.png" class="blog-image" alt="The
+<img src="/public/img/2020-10-03/github-revert.png" class="blog-image" alt="The
 revert pull request button on github" />
 
 This one isn't rocket science and it's usually the one you reach for when you

@@ -31,7 +31,7 @@ sort of wizard. Over his life time he has created or had a hand in creating many
 useful things such as [`grep`](https://en.wikipedia.org/wiki/Grep) and the
 [Go](https://en.wikipedia.org/wiki/Go_%28programming_language%29).
 
-<img src="/assets/img/2020-07-12/ken-dennis-pdp-11.jpg" class="blog-image"
+<img src="/public/img/2020-07-12/ken-dennis-pdp-11.jpg" class="blog-image"
 alt="Ken Thompson and Dennis Ritchie working as a PDP-11" />
 <p class="picture-attribution">
 By <a rel="nofollow" class="external text"
@@ -281,7 +281,7 @@ the computer had a profound affect on it. The reason being that it had a
 particular keyboard layout which drove many of the decisions he made when it
 came to deciding which symbols/keys to use for commands.
 
-<img src="/assets/img/2020-07-12/adm3a.jpg" class="blog-image" alt="An ADM-3A"
+<img src="/public/img/2020-07-12/adm3a.jpg" class="blog-image" alt="An ADM-3A"
 />
 
 <p class="picture-attribution"> By Chris Jacobs - <span class="int-own-work"
@@ -293,7 +293,7 @@ href="https://commons.wikimedia.org/w/index.php?curid=22231922">Link</a> </p>
 Pictures are lovely, the one above is nice, but what I'm interested in showing
 you is the keyboard layout, so let's see a diagram.
 
-<img src="/assets/img/2020-07-12/adm3a-keyboard.svg" class="blog-image" alt="The
+<img src="/public/img/2020-07-12/adm3a-keyboard.svg" class="blog-image" alt="The
 keyboard layout of an ADM-3A" />
 
 <p class="picture-attribution">

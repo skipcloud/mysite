@@ -171,7 +171,7 @@ and without the proper context it's easy to see why this can get confusing.
 
 [Atom](https://atom.io/) will show the changes like this:
 
-<img src="/assets/img/2020-10-24/merge.png" class="blog-image" alt="Atom
+<img src="/public/img/2020-10-24/merge.png" class="blog-image" alt="Atom
 showing a merge conflict when merging" />
 
 ### ours or theirs?
@@ -292,7 +292,7 @@ On top of that what is considered "ours" and "theirs" has switched, an IDE will
 show the changes like this now:
 
 
-<img src="/assets/img/2020-10-24/rebase.png" class="blog-image" alt="Atom
+<img src="/public/img/2020-10-24/rebase.png" class="blog-image" alt="Atom
 showing a merge conflict" />
 
 I seem to have created more questions than I have answered in this section, what
@@ -418,7 +418,7 @@ change D
 
 And an editor is showing us this:
 
-<img src="/assets/img/2020-10-24/rebase.png" class="blog-image" alt="Atom
+<img src="/public/img/2020-10-24/rebase.png" class="blog-image" alt="Atom
 showing a merge conflict" />
 
 Based on what we know about merge conflicts you can see why it's easy to get

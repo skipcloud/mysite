@@ -80,7 +80,7 @@ Let's start with the first one
 When we call `speak` on `skip` you can think of the message heading off to
 the right of the object to check the object's class for the method.
 
-<img src="/assets/img/2020-05-17/object-and-class.png" class="blog-image"/>
+<img src="/public/img/2020-05-17/object-and-class.png" class="blog-image"/>
 
 Ruby checks in this class for a method called `speak` and finds it so ruby runs
 the code. Nice and easy so far. That diagram is too simple, let's see if we can
@@ -96,7 +96,7 @@ after, then it will go up the chain of superclasses searching each as it goes.
 In other words it will check the parent of `Person`, and keep doing so until it
 finds the method it is after.
 
-<img src="/assets/img/2020-05-17/obj-class-superclasses.png" class="blog-image"/>
+<img src="/public/img/2020-05-17/obj-class-superclasses.png" class="blog-image"/>
 
 Ruby finds a method called `:object_id` in class `Object` so it runs that method.
 
@@ -119,7 +119,7 @@ calling `:method_missing` on the original receiver `skip` and the process starts
 over. Right into the class, up the chain until it reaches `BasicObject` where it
 finds `:method_missing` and the code is ran.
 
-<img src="/assets/img/2020-05-17/method-missing.png" class="blog-image"/>
+<img src="/public/img/2020-05-17/method-missing.png" class="blog-image"/>
 
 The astute amongst you might be wondering "if ruby goes through the chain again
 looking for `:method_missing` could we define our own method called
@@ -165,7 +165,7 @@ object into its class to look for a method. There is an extra step missing, ruby
 first goes right into the `singleton class` of an object, also known as the
 `eigenclass` and _then_ goes up into the object's class.
 
-<img src="/assets/img/2020-05-17/singleton-class.png" class="blog-image"/>
+<img src="/public/img/2020-05-17/singleton-class.png" class="blog-image"/>
 
 Previously when I used `def skip.method_missing` to define a new method, this
 syntax creates the method in the singleton class of the object. The singleton
@@ -220,7 +220,7 @@ anything to the right of a class for ruby to check inside.
 Let's extend the diagram from before to add some more clarity to this circus
 show of lies and deceit.
 
-<img src="/assets/img/2020-05-17/class-methods.png" class="blog-image"/>
+<img src="/public/img/2020-05-17/class-methods.png" class="blog-image"/>
 
 As you can see there is a little more to the picture than I was letting on. When
 you call a method on a class (which again is just an object) ruby still hops to
@@ -239,7 +239,7 @@ Person.another_method
 # => "hello from Object"
 ```
 
-<img src="/assets/img/2020-05-17/calling-class-method.png" class="blog-image"/>
+<img src="/public/img/2020-05-17/calling-class-method.png" class="blog-image"/>
 
 Start in `Person` and go right into the singleton class, then up the chain of
 singleton classes until you find the method you are looking for. This also means
@@ -326,7 +326,7 @@ Person.prepend Stuff
 
 And here is a visual representation of that hierarchy
 
-<img src="/assets/img/2020-05-17/modules.png" class="blog-image"/>
+<img src="/public/img/2020-05-17/modules.png" class="blog-image"/>
 
 ## deliciously simple
 
@@ -349,7 +349,7 @@ Person.class.superclass.superclass
 
 Here is one such diagram that I've found online
 
-<img src="/assets/img/2020-05-17/object-model.png" class="blog-image"/>
+<img src="/public/img/2020-05-17/object-model.png" class="blog-image"/>
 
 I hope that little journey through the Ruby Object Model has been helpful and
 eye opening for you. There is still more out there for you to learn but

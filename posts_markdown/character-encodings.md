@@ -69,7 +69,7 @@ system used flags to send messages. Chappe also used the word
 _"tachy"_ meaning "swift" and _"graphy"_ meaning "to write", in other words
 "fast writer".
 
-<img src="/assets/img/2020-09-13/semaphore.jpg" class="blog-image"
+<img src="/public/img/2020-09-13/semaphore.jpg" class="blog-image"
 alt="semaphore" />
 <p class="picture-attribution">
 By Lokilech at German Wikipedia - Own work, CC BY-SA 3.0,
@@ -93,7 +93,7 @@ relied on predetermined messages and phrases that could be strung together, not
 letters, so there was a code book that each relay station had so the operators
 knew what message was being sent.
 
-<img src="/assets/img/2020-09-13/chappe-code.svg" class="blog-image"
+<img src="/public/img/2020-09-13/chappe-code.svg" class="blog-image"
 alt="Chappy semaphore code for numbers" />
 <p class="picture-attribution">
 By Courtesy Spinningspark at Wikipedia, CC BY-SA 3.0, <a
@@ -138,7 +138,7 @@ around 1837 by [Samuel Morse](https://en.wikipedia.org/wiki/Samuel_Morse) as a
 way to communicate over long distances using the newly-invented telegraph
 system.
 
-<img src="/assets/img/2020-09-13/morse-key.jpg" class="blog-image"
+<img src="/public/img/2020-09-13/morse-key.jpg" class="blog-image"
 alt="a Morse key" />
 <p class="picture-attribution">
 By Hp.Baumeler - Own work, CC BY-SA 4.0,
@@ -152,7 +152,7 @@ respectively. There is no need for a code book, you could tap out exactly what
 you wanted to say. A telegraph key or a "Morse key" was used to tap out these signals
 which formed messages.
 
-<img src="/assets/img/2020-09-13/morse-code.svg" class="blog-image"
+<img src="/public/img/2020-09-13/morse-code.svg" class="blog-image"
 alt="international morse code" />
 <p class="picture-attribution">
 By Rhey T. Snodgrass &amp;amp; Victor F. Camp, 1922 Public Domain, <a
@@ -195,7 +195,7 @@ first of which looked like pianos with characters written on the keys.  Instead
 of tapping out the messages operators could press the corresponding key for a
 character and the machine would generate the Morse code for that character.
 
-<img src="/assets/img/2020-09-13/printing-telegraph.jpg" class="blog-image"
+<img src="/public/img/2020-09-13/printing-telegraph.jpg" class="blog-image"
 alt="international morse code" />
 <p class="picture-attribution">
 By Ambanmba (talk) - Own work (Original text: I created this work entirely by
@@ -213,7 +213,7 @@ French Telegraph Service, invents the [Baudot
 Code](https://en.wikipedia.org/wiki/Baudot_code) which was initially used with a
 "piano Baudot keyboard", which was a small piano-like device that had five keys.
 
-<img src="/assets/img/2020-05-31/baudot-code.png" class="blog-image" alt="baudot
+<img src="/public/img/2020-05-31/baudot-code.png" class="blog-image" alt="baudot
 code" />
 <p class="picture-attribution">
 By <a href="https://en.wikipedia.org/wiki/%C3%89mile_Baudot" class="extiw"
@@ -264,7 +264,7 @@ they would hold down the key that represents the first bit, which was the third
 key, and then wait for the machine to click and unlock for the next character.
 Operators needed to have a steady rhythm to work with the device.
 
-<img src="/assets/img/2020-09-13/baudot-piano.jpg" class="blog-image" alt="baudot
+<img src="/public/img/2020-09-13/baudot-piano.jpg" class="blog-image" alt="baudot
 piano" />
 <p class="picture-attribution">
 By M. Rothen - Journal telegraphique vol8 N 12 decembre 1884 reprod Eric Fischer
@@ -291,7 +291,7 @@ lack of a hole as a "zero". This meant operators could type out messages in
 advance then take the resulting tape and feed it to a tape transmitter which
 would send the message.
 
-<img src="/assets/img/2020-09-13/murray-tape.jpg" class="blog-image"
+<img src="/public/img/2020-09-13/murray-tape.jpg" class="blog-image"
 alt="A perforated tape holding Baudot code" />
 <p class="picture-attribution">
 By Ricardo Ferreira de Oliveira - Own work, CC BY-SA 3.0,
@@ -379,7 +379,7 @@ Krum](https://en.wikipedia.org/wiki/Charles_L._Krum) which made a practical
 teleprinter possible and in 1908 the first working teleprinter was produced by
 the Morkrum Company called the Morkrum Printing Telegraph.
 
-<img src="/assets/img/2020-09-13/morkrum-printing-telegraph.jpeg" class="blog-image"
+<img src="/public/img/2020-09-13/morkrum-printing-telegraph.jpeg" class="blog-image"
 alt="The Morkrum Printing Telegraph" />
 <p class="picture-attribution">Source unknown</p>
 
@@ -412,7 +412,7 @@ codes that came from Baudot code that there were no lowercase letters,
 everything was uppercase, this was due to the fact there wasn't enough code
 points for lowercase letters.
 
-<img src="/assets/img/2020-05-24/asr-tty.png" alt="ASR 33 teletype"
+<img src="/public/img/2020-05-24/asr-tty.png" alt="ASR 33 teletype"
 class="blog-image"/>
 <p class="picture-attribution">By <a
 href="//commons.wikimedia.org/wiki/User:ArnoldReinhold"
@@ -474,7 +474,7 @@ standard teleprinter code. It's worth noting that this was the last code
 developed with telegraph equipment in mind, seeing as computer networks and the
 internet would play a bigger role in communication in the coming decades.
 
-<img src="/assets/img/2020-09-13/ascii-code-chart.svg" class="blog-image"
+<img src="/public/img/2020-09-13/ascii-code-chart.svg" class="blog-image"
 alt="the ASCII code chart" />
 <p class="picture-attribution">
 By <a href="//commons.wikimedia.org/wiki/User:Anomie" class="mw-redirect"
@@ -752,7 +752,7 @@ as BCDIC. BCD was used in most of IBM's computers throughout the 1950s and early
 series](https://en.wikipedia.org/wiki/IBM_System/360). EBCDIC was meant as an
 extension of BCD.
 
-<img src="/assets/img/2020-09-13/ibm-system-360-model-50.jpg" class="blog-image"
+<img src="/public/img/2020-09-13/ibm-system-360-model-50.jpg" class="blog-image"
 alt="IBM System 360/Model 50" />
 <p class="picture-attribution">
   By Bundesarchiv, B 145 Bild-F038812-0014 / Schaack, Lothar / CC-BY-SA 3.0, <a
@@ -783,7 +783,7 @@ alphanumeric data, the code would be punched into the rows 0 to 9 and 11 to 12,
 there was no row 10. Punches 1 to 9 were called rows whereas 0, 11 and 12 were
 called zones.
 
-<img src="/assets/img/2020-09-13/ibm-card.jpg" class="blog-image"
+<img src="/public/img/2020-09-13/ibm-card.jpg" class="blog-image"
 alt="The IBM Card - 80 columns wide" />
 <p class="picture-attribution">
   By Arnold Reinhold - I took this picture of an artifact in my possession. The
@@ -867,7 +867,7 @@ ASCII EBCDIC could represent a total of 256 characters (2^8).
 Their System 360 computer range ended up becoming very popular and thus so did
 EBCDIC.
 
-<img src="/assets/img/2020-09-13/ebcdic-punch.png" class="blog-image"
+<img src="/public/img/2020-09-13/ebcdic-punch.png" class="blog-image"
 alt="An IBM card with the EBCDIC character set punched into it" />
 <p class="picture-attribution">
   By <a href="//en.wikipedia.org/wiki/User:Nikevich"
@@ -1426,7 +1426,7 @@ ASCII was the most popular character encoding on the internet until UTF-8 passed
 it at the end of 2007, Google reported in 2008 that UTF-8 was the most common
 encoding for HTML files.
 
-<img src="/assets/img/2020-09-13/utf-8-growth.svg" class="blog-image"
+<img src="/public/img/2020-09-13/utf-8-growth.svg" class="blog-image"
 alt="UTF-8 adoption graph" />
 <p class="picture-attribution">
   By <a href="//commons.wikimedia.org/wiki/User:Chris55"

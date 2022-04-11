@@ -50,7 +50,7 @@ The rate at which you could send characters over the wire was known as the baud
 rate, and is still something you can run into when dealing with different
 terminals.
 
-<img src="/assets/img/2020-05-31/baudot-code.png" class="blog-image" alt="baudot
+<img src="/public/img/2020-05-31/baudot-code.png" class="blog-image" alt="baudot
 code" />
 <p class="picture-attribution">
 By <a href="https://en.wikipedia.org/wiki/%C3%89mile_Baudot" class="extiw"
@@ -96,7 +96,7 @@ English alphabet and encodes 128 characters, there are only 26 letters in the
 alphabet so that leaves us plenty of room for things like punctuation, and
 saucy characters like `<`, `~`, and `%`.
 
-<img src="/assets/img/2020-05-31/ascii-code.png" class="blog-image" alt="ascii
+<img src="/public/img/2020-05-31/ascii-code.png" class="blog-image" alt="ascii
 code" />
 <p class="picture-attribution">
 By an unknown officer or employee of the United States Government - <a
@@ -238,7 +238,7 @@ This also explains why, if you open a binary file using vim you will see `^@`
 all over the place. In ASCII `00` represents `NUL`, and its control
 character is `ctrl-@`, and the caret symbol is another way to represent `ctrl`.
 
-<img src="/assets/img/2020-05-31/binary-vim.png" class="blog-image" alt="The
+<img src="/public/img/2020-05-31/binary-vim.png" class="blog-image" alt="The
 binary file for the ls command open on vim" />
 
 ## in conclusion

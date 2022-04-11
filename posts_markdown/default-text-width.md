@@ -24,7 +24,7 @@ using the line editor [ed](https://en.wikipedia.org/wiki/Ed_%28text_editor%29).
 All these years later and our computers are still pretending to be a physical
 terminal.
 
-<img src="/assets/img/2020-05-24/asr-tty.png" alt="ASR 33 teletype"
+<img src="/public/img/2020-05-24/asr-tty.png" alt="ASR 33 teletype"
 class="blog-image"/>
 <p class="picture-attribution">By <a
 href="//commons.wikimedia.org/wiki/User:ArnoldReinhold"
@@ -153,7 +153,7 @@ Let's do some quick math here:
 Here is a type writer that can fit 87 characters per line, check the ruler along
 the carriage.
 
-<img src="/assets/img/2020-05-24/particolare-olivetti-lettera-22.png"
+<img src="/public/img/2020-05-24/particolare-olivetti-lettera-22.png"
 alt="Particolare Lettera 22 with ruler showing a maximum of 87 characters per
 line" class="blog-image"/>
 <p class="picture-attribution">By <a
@@ -178,7 +178,7 @@ with inventing a machine that could read input from holes punched on a card,
 this machinery was used during the
 [1890 US Census](https://en.wikipedia.org/wiki/1890_United_States_Census).
 
-<img src="/assets/img/2020-05-24/hollerith-punch-card.jpg"
+<img src="/public/img/2020-05-24/hollerith-punch-card.jpg"
 alt="An original Hollerith punch card" class="blog-image"/>
 <p class="picture-attribution">By Herman Hollerith - Railroad Gazette, Public
 Domain, <a
@@ -211,7 +211,7 @@ technology rapidly advancing through the 20th century the company iterated on
 computer designs with the purpose of reading and handling data that was input
 using punch cards.
 
-<img src="/assets/img/2020-05-24/ibm-3279.jpg"
+<img src="/public/img/2020-05-24/ibm-3279.jpg"
 alt="An IBM 3279 computer terminal" class="blog-image"/>
 <p class="picture-attribution">By <a
 href="https://www.wikidata.org/wiki/Special:EntityPage/Q18857750" class="extiw"
@@ -247,6 +247,6 @@ variety of reasons, personally I use a text width of 78 characters for all of my
 documentation and git commits. Even the markdown I write my blog posts in
 adheres to this text width, I just find it pleasing to read.
 
-<img src="/assets/img/2020-05-24/vim-screenshot.png"
+<img src="/public/img/2020-05-24/vim-screenshot.png"
 alt="A screenshot of this blog post in vim" class="blog-image"/>
 
