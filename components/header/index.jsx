@@ -8,7 +8,7 @@ import styles from './header.module.css'
 export default function Header() {
   const router = useRouter()
   return (
-    <header>
+    <header className={styles.header}>
       <nav className={styles.navbar}>
         <ul>
           {linkItems(router)}
