@@ -1,3 +1,8 @@
+.sideBar {
+  background: grey;
+  flex: 1;
+}
+
 .navBar nav {
   border: 1px solid black;
   border-radius: 2px;
@@ -19,13 +24,13 @@
 }
 
 .activePage {
-  color: var(--third-color);
+  color: white;
 }
 
 .activePage::before {
   content: "⇥ ";
   /* take arrow out of flow */
-  position: relative;
+  position: absolute;
   left: -10px;
 }
 

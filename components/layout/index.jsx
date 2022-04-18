@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
 import Head from 'next/head'
-import Header from '../../components/header'
+import Aside from '../../components/aside'
+import Main from '../../components/main'
 import styles from './layout.module.css'
 
 
@@ -16,8 +17,10 @@ export default function Layout(props) {
         <meta charSet="utf-8" />
       </Head>
 
-      <Header />
-      { props.children }
+      <Aside />
+      <Main>
+        { props.children }
+      </Main>
     </div>
   )
 }

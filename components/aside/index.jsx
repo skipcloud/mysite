@@ -3,18 +3,18 @@ import { useRouter } from 'next/router'
 import Link from 'next/link'
 import { nanoid } from 'nanoid'
 
-import styles from './header.module.css'
+import styles from './aside.module.css'
 
 export default function Header() {
   const router = useRouter()
   return (
-    <header className={styles.header}>
+    <aside className={styles.sideBar}>
       <nav className={styles.navbar}>
         <ul>
           {linkItems(router)}
         </ul>
       </nav>
-    </header>
+    </aside>
   )
 } 
 
