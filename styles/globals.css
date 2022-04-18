@@ -1,3 +1,11 @@
+:root {
+--first-color: #D5DCF9;
+--second-color: #ffc19e;
+--third-color: #006097;
+--fourth-color: #009b97;
+--fifth-color: #68d5aa;
+}
+
 html,
 body {
   padding: 0;
@@ -5,14 +13,31 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 10px;
+  background-color: var(--first-color);
 }
 
-:root {
---first-color: #ffa5bf;
---second-color: #ffc19e;
---third-color: #006097;
---fourth-color: #009b97;
---fifth-color: #68d5aa;
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2.3rem;
+}
+
+h3 {
+  font-size: 2.1rem;
+}
+
+h4 {
+  font-size: 1.9rem;
+}
+
+h5 {
+  font-size: 1.7rem;
+}
+
+h6 {
+  font-size: 1.5rem;
 }
 
 ul {
@@ -21,6 +46,19 @@ ul {
 
 a {
   text-decoration: none;
-  color: inherit; 
+  color: inherit;
 }
 
+p, pre>code {
+  font-size: 1.8rem;
+}
+
+p > code {
+  color: white;
+  background: grey;
+}
+
+/* highlight.js aka code */
+code.hljs {
+  border-radius: 3px;
+}

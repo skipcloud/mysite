@@ -9,6 +9,8 @@ import rehypeRaw from 'rehype-raw'
 import rehypeHighlight from 'rehype-highlight'
 import Layout from '../../components/layout'
 
+import styles from './[title].module.css'
+
 const markdownPath = path.join(process.cwd(), 'posts_markdown')
 
 export default function Post({ post }) {
@@ -17,6 +19,9 @@ export default function Post({ post }) {
         title: post.data.title,
         description: `A blog post titled "${post.data.title}"`
       }}>
+      <header className={styles.header}>
+        <h1>{post.data.title}</h1>
+      </header>
       <div dangerouslySetInnerHTML={{__html: post.content}}></div>
     </Layout>
   )
